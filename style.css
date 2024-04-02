@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 section{
     gap: 20px;
 }
@@ -5,9 +9,16 @@ section{
     width: 95%;
     margin-inline: auto;
     padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.title{
-    margin-left: 50px;
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;;
+    justify-content: center;
 }
 
 .list1, .list2{
@@ -21,7 +32,7 @@ section{
 
 .list1-item, .list2-item{
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
     padding: 10px;
     border: 1px solid #000;
     border-radius: 5px;
